@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS for bootstrap -->
+  <link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="all" />
+
+  <title>Translator</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Kabir's Translator</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Features</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <label class="mt-2" for="text">Enter your text to translate</label>
+    <textarea class="form-control" id="text" rows="5"></textarea>
+    <button type="button" class="mt-1 btn btn-primary" onclick="manipulate()">Translate</button>
+  </div>
+  <div class="container mt-3">
+    <p class="" id="output"></p>
+  </div>
+  <div class="container">
+    <label class="mt-2" for="outputCode">Code of the output:</label>
+    <textarea class="form-control" readonly id="outputCode" rows="10"></textarea>
+    <button type="button" class="mt-1 btn btn-primary" onclick="edit()">See result</button>
+  </div>
+
+
+
+  <!-- Javascript for bootstrap -->
+  <script src="jquery-3.5.1.slim.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+  <!-- JAVASCRIPT FOR TRANSLATION -->
+  <script src="dictionary.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
